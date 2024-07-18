@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+/* main {
+  filter: blur(7px);
+} */
+/* Navigation CSS starts here  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  padding: 25px;
+  background-color: #00dd97;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 300000;
+}
+.logo {
+  font-size: 1.5rem;
+  font-family: "Hind", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.navi {
+  display: flex;
+
+  gap: 70px;
+}
+.navi a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.navi > a:hover {
+  opacity: 0.6;
+}
+.navi > button {
+  padding: 5px 19px;
+  background-color: #00dd97;
+  outline: none;
+  font-size: 1.4rem;
+  border-radius: 3px;
+}
+.navi > button:hover {
+  background-color: #1ff9ad;
+  /* border: none; */
+}
+/* navigation bar css ends here  */
+
+/* main body css starts here  */
+
+main {
+  min-height: 84.8vh;
+  background-color: #141c30;
+}
+.searchbar {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.searchbar > input,
+.searchbar > button {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 1.8rem;
+  border-radius: 6px;
+  /* height: 60px; */
+}
+.searchbar > button {
+  padding: 20px 30px;
+  font-weight: 550;
+  background-color: #00dd97;
+}
+.searchbar > input {
+  width: 600px;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.gifarea {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0px 10px;
+}
+.gif {
+  width: 200px;
+  margin-bottom: 40px;
+}
+.gif > img,
+.gif > button {
+  display: block;
+  width: 100%;
+  /* border-radius: 3px; */
+}
+.copylink {
+  padding: 10px 0px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  background-color: #00dd97;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: 1px solid #00dd97;
+}
+.favourites {
+  padding: 10px 0px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+/* login css starts here  */
+.login2 {
+  display: none;
+}
+.login {
+  position: fixed;
+  /* border: 4px solid palevioletred; */
+  top: 15%;
+  right: 34%;
+  width: 400px;
+  height: 400px;
+
+  background-color: #141c30;
+  color: #00dd97;
+  padding: 10px 10px;
+  z-index: 88;
+  border-radius: 4px;
+  border: 2px solid #00dd97;
+}
+.login > h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Hind", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.login > h2 {
+  font-size: 2.2rem;
+}
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+}
+.credentials > label,
+.credentials > input,
+.credentials > button {
+  display: block;
+  font-size: 1.4rem;
+}
+.credentials > input {
+  padding: 6px;
+}
+.loginlink {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+.loginlink > a {
+  display: inline-block;
+}
+.forgot {
+  color: white;
+}
+.signup {
+  color: #00dd97;
+}
+.credentials > button {
+  margin-top: 28px;
+  padding: 6px;
+  background-color: #00dd97;
+}
+
+.login > i,
+.signuppage > i {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 40px;
+  width: 40px;
+  font-size: 1.6rem;
+  margin: 3px;
+  border-bottom-left-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.signuppage {
+  position: fixed;
+  /* border: 4px solid palevioletred; */
+  top: 15%;
+  right: 34%;
+  width: 400px;
+  height: 450px;
+  background-color: #141c30;
+  color: #00dd97;
+  padding: 10px 10px;
+  z-index: 88;
+  border-radius: 4px;
+  border: 2px solid #00dd97;
+}
+.signuppage > h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Hind", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.signuppage > h2 {
+  font-size: 2.2rem;
+}
+.loginup {
+  color: #00dd97;
+  font-size: 1.3rem;
+}
+.signuplink {
+  display: flex;
+  justify-content: flex-end;
+}
+.signuppage > .credentials > button {
+  margin-top: 10px;
+  padding: 6px;
+  background-color: #00dd97;
+}
+.signup2 {
+  display: none;
+}

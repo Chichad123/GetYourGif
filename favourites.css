@@ -1,0 +1,25 @@
+main > h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 6px 0 10px #00dd97;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00dd97;
+  width: 30vw;
+  margin: auto;
+  margin-bottom: 46px;
+}
+main {
+  padding-top: 20px;
+}
+.gifarea {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0px 10px;
+}
+.gif {
+  width: 300px;
+  margin-bottom: 40px;
+}
