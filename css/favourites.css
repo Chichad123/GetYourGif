@@ -12,7 +12,7 @@ main > h1 {
 main {
   padding-top: 20px;
 }
-.gifarea {
+.favouriteArea {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -22,4 +22,11 @@ main {
 .gif {
   width: 300px;
   margin-bottom: 40px;
+}
+.remove {
+  padding: 10px 0px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
 }
